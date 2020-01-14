@@ -1,0 +1,14 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-image: url('../img/mihailpozarski.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    padding-bottom: 20rem;
+    padding-top: 30rem;
+    position: relative;
+    min-height: 40rem;
+}
