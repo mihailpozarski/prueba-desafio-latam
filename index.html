@@ -15,9 +15,10 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
+        <!-- Barra de navegacion -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="https://www.gravatar.com/avatar/6035c7881c63e9da6e63ce7d3e0befec?s=50" alt="gravatar"> Mihail Pozarski</a>
+                <a class="navbar-brand" href="#"><img src="https://www.gravatar.com/avatar/6035c7881c63e9da6e63ce7d3e0befec?s=45" alt="gravatar"> Mihail Pozarski</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,6 +41,7 @@
             </div>
         </nav>
 
+        <!-- Header -->
         <Header class="text-center pt-5 mt-5">
             <div class="container">
                 <h1 class="font-weight-bold">Mihail Pozarski</h1>
@@ -47,100 +49,217 @@
             </div>
         </Header>
 
-        <section id="about" class="container text-center my-5">
+        <!-- Seccion acerca de mi -->
+        <section id="about" class="container text-center my-5 p-5 d-none d-md-block">
             <h1 class="font-weight-bold my-4">Sobre mi</h1>
-            <p class="my-4">Igeniero civil industrial, no se muy bien como llegue a esto pero aqui estoy, programo hace cerca de 4 años, me inicie desde la universidad trabajando en su LMS(moodle) como desarrollador hasta llegar a ser jefe de la plataforma, pero luego todo dio un giro y conocí a rails</p>
+            <p class="my-4">
+                Igeniero civil industrial, no se muy bien como llegue a esto pero aqui estoy,
+                programo hace cerca de 4 años, me inicie desde la universidad trabajando en su LMS(moodle)
+                como desarrollador hasta llegar a ser jefe de la plataforma, pero luego todo dio un giro y
+                conocí a rails
+            </p>
             <div class="row">
                 <div class="col-md-6 px-5">
                     <i class="fas fa-bicycle fa-3x"></i>
                     <h3>Mountain Biker</h3>
-                    <p>Es el hobby al que le dedico los fines de semana, duele cuando te caes pero te emociona cuando te lanzas cerro abajo y no mueres :)</p>
+                    <p>
+                        Es el hobby al que le dedico los fines de semana, 
+                        duele cuando te caes pero te emociona cuando te lanzas
+                        cerro abajo y no mueres :)
+                    </p>
                 </div>
                 <div class="col-md-6 px-5">
                     <i class="fas fa-laptop fa-3x"></i>
                     <h3>Programador</h3>
-                    <p>Jamas pense que llegaría a ser programador, comence en PHP con moodle y luego por una cambio laboral hoy trabajo programando en RoR y Angular JS (sip... old school)</p>
+                    <p>
+                        Jamas pense que llegaría a ser programador, comence en PHP con moodle
+                        y luego por una cambio laboral hoy trabajo programando en RoR y Angular
+                        JS (sip... old school)
+                    </p>
                 </div>
             </div>
         </section>
 
-        <div class="container">
+        <!-- linea divisora de contenido-->
+        <div class="container d-none d-md-block">
             <hr class= "divider">
         </div>
 
-        <section id="experience" class="container text-center my-5">
+        <!-- Experiencia -->
+        <section id="experience" class="container text-center my-5 p-5">
             <h1 class="font-weight-bold my-4">Mi Experiencia</h1>
             <div class="row">
+                <!-- Cargo 1-->
                 <div class="col-md-6 px-5">
-                    <img src="assets/img/Moodle_RGB.svg" alt="moodle logo" class="img-fluid my-5 w-50">
+                    <img src="assets/img/Moodle_RGB.svg" alt="moodle logo" class="img-fluid my-5 w-50 shadow p-3" data-container="body" data-toggle="popover" data-placement="top" data-content="moodle.com">
                     <h3>Universidad Adolfo Ibañez</h3>
                     <h5>(2016-2018)</h5>
-                    <p>Jefe de desarrollo de la plataforma, liderando el equipo de desarrollo integrado por soporte y developers, ademas de una celula de desarrollo integrada por 3 alumnos, realizamos multiples features para moodle, dentro de los cuales se destaca "PaperAttendance" modulo de asistencia online junto a posibilidad de escaneo fisico con procesamiento de OCR</p>
+                    <button class="btn btn-primary my-3 d-md-none" type="button" data-toggle="modal" data-target="#exampleModal">Detalles</button>
                 </div>
+                <!-- Cargo 2-->
                 <div class="col-md-6 px-5">
-                    <img src="assets/img/rails-logo.svg" alt="rails logo" class="img-fluid my-5 w-50">
-                    <h3>Interkambio - Ksec</h3>
+                    <img src="assets/img/rails-logo.svg" alt="rails logo" class="img-fluid my-5 w-50 shadow p-3" data-container="body" data-toggle="popover" data-placement="top" data-content="rubyonrails.org">
+                    <h3 >Interkambio - Ksec</h3>
                     <h5>(2019 - Hoy)</h5>
-                    <p>Jefe de desarrollo de la plataforma, encargado de gestionar y planificar los desarrollos, cumpliendo rol de scrum-master ademas de developer en tecnologías como AngularJS, Ruby on Rails, deploy en heroku y testing con CircleCI</p>
+                    <button class="btn btn-primary my-3 d-md-none" type="button" data-toggle="modal" data-target="#exampleModal2">Detalles</button>
+                </div>
+                <!-- Modal cargo 1 -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Universidad Adolfo Ibañez</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            Jefe de desarrollo de la plataforma, liderando el equipo de desarrollo integrado por soporte
+                            y developers, ademas de una celula de desarrollo integrada por 3 alumnos, 
+                            realizamos multiples features para moodle, dentro de los cuales se destaca 
+                            "PaperAttendance" modulo de asistencia online junto a posibilidad de escaneo
+                            fisico con procesamiento de OCR
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal cargo 2-->
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Interkambio - Ksec</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            Jefe de desarrollo de la plataforma, encargado de gestionar y planificar 
+                            los desarrollos, cumpliendo rol de scrum-master ademas de developer en tecnologías 
+                            como AngularJS, Ruby on Rails, deploy en heroku y testing con CircleCI
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Vista no mobile para detalles de cargos-->
+            <div class="row">
+                <!-- Cargo 1-->
+                <div class="d-none d-md-block col-md-6">
+                    <button class="btn btn-primary my-3" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Detalles</button>
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body py-3">
+                            <p>
+                                Jefe de desarrollo de la plataforma, liderando el equipo de desarrollo integrado por soporte
+                                y developers, ademas de una celula de desarrollo integrada por 3 alumnos, 
+                                realizamos multiples features para moodle, dentro de los cuales se destaca 
+                                "PaperAttendance" modulo de asistencia online junto a posibilidad de escaneo
+                                fisico con procesamiento de OCR
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cargo 2-->
+                <div class="d-none d-md-block col-md-6">
+                    <button class="btn btn-primary my-3" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Detalles</button>
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card card-body py-3">
+                            <p>
+                                Jefe de desarrollo de la plataforma, encargado de gestionar y planificar 
+                                los desarrollos, cumpliendo rol de scrum-master ademas de developer en tecnologías 
+                                como AngularJS, Ruby on Rails, deploy en heroku y testing con CircleCI
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="work" class="container-fluid my-5 p-5 bg-info">
-            <h2 class="display-3 text-center font-weight-bold my-4 text-white">Mis Trabajos</h2>
+        <!-- Mis Trabajos -->
+        <section id="work" class="container-fluid my-5 p-5 bg-secondary">
+            <h2 class="text-center font-weight-bold my-4 text-white">Mis Trabajos</h2>
             <div class="card-deck">
+                <!-- Trabajo 1-->
                 <div class="card">
-                    <img src="assets/img/card-1.jpg" class="card-img-top" alt="..." style="height: 50%">
+                    <img src="assets/img/meet_coffee.png" class="card-img-top" alt="..." style="height: 60%">
                     <div class="card-body">
-                        <h5 class="card-title">Asado en la patagonia</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#asado">Ver más</button>
+                        <h5 class="card-title">Desafío 1 "Mett & coffee"</h5>
+                        <p class="card-text">Primer desafío de la academia para aprender a utilizar html y css</p>
                     </div>
                 </div>
+                <!-- Trabajo 2-->
                 <div class="card">
-                    <img src="assets/img/card-2.jpg" class="card-img-top" alt="..." style="height: 50%">
+                    <img src="assets/img/iguana_page.png" class="card-img-top" alt="..." style="height: 60%">
                     <div class="card-body">
-                        <h5 class="card-title">Papas del fin del mundo</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#papas">Ver más</button>
+                        <h5 class="card-title">Desafío 2 "Iguana page"</h5>
+                        <p class="card-text">Segundo desafío de la academia para aprender a utilizar html y css</p>
                     </div>
                 </div>
+                <!-- Trabajo 3-->
                 <div class="card">
-                    <img src="assets/img/card-3.jpg" class="card-img-top" alt="..." style="height: 50%">
+                    <img src="assets/img/suricata.png" class="card-img-top" alt="..." style="height: 60%">
                     <div class="card-body">
-                        <h5 class="card-title">Salmones de Alaska</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#salmones">Ver más</button>
+                        <h5 class="card-title">Desafío 3 "Suricata"</h5>
+                        <p class="card-text">Tercer Desafío de la academia para aprender Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck py-5">
+                <!-- Trabajo 4-->
+                <div class="card">
+                    <img src="assets/img/cuppon.png" class="card-img-top" alt="..." style="height: 70%">
+                    <div class="card-body">
+                        <h5 class="card-title">Desafío 4 "Cuppon"</h5>
+                        <p class="card-text">Cuarto desafío de la academia para aprender a utilizar Bootstrap.</p>
+                    </div>
+                </div>
+                <!-- Trabajo 5-->
+                <div class="card">
+                    <img src="assets/img/ricomida.png" class="card-img-top" alt="..." style="height: 70%">
+                    <div class="card-body">
+                        <h5 class="card-title">Desafío 5 "Ricomida"</h5>
+                        <p class="card-text">Quinto desafío de la academia para aprender a utilizar Javascript.</p>
+                    </div>
+                </div>
+                <!-- Trabajo 6-->
+                <div class="card">
+                    <img src="assets/img/scycles.png" class="card-img-top" alt="..." style="height: 70%">
+                    <div class="card-body">
+                        <h5 class="card-title">Página "scycles"</h5>
+                        <p class="card-text">E-commerce levantado para la tienda scycles.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="container my-5">
-            <h2 class="display-3 font-weight-bold text-center my-4">Contáctame</h2>
-            <p class="text-center my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quis omnis inventore aperiam corporis odit earum perferendis repudiandae aliquam quaerat, magnam non debitis vitae id nemo facilis! Corrupti, voluptate odit!</p>
-            <form>
-                <div class="form-group">
-                    <label for="formGroupExampleInput">Nombre</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Correo electronico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electronico">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Tu mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu mensaje"></textarea>
-                </div>
-                <div class="text-right">
-                    <button type="submit" class="btn btn-info">Enviar</button>
-                </div>
-            </form>
+            <h1 class="font-weight-bold my-4 text-center">Escríbeme</h1>
+            <!-- TypeFrom code-->
+            <div class="typeform-widget" data-url="https://mihailpozarski.typeform.com/to/VIAunN" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
         </section>
-        <footer class="bg-dark text-center text-light p-3">
-            <p>Mihail Pozarski 2019. Todos los derechos reservados.</p>
+
+        <footer class="bg-dark text-center text-light p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://www.gravatar.com/avatar/6035c7881c63e9da6e63ce7d3e0befec?s=45" alt="gravatar">
+                        <p class="navbar-brand">Mihail Pozarski</p>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="px-1" href="https://github.com/mihailpozarski"><i class="fab fa-github-square fa-3x"></i></a>
+                        <a class="px-1" href="https://www.instagram.com/mihailpozarski"><i class="fab fa-instagram fa-3x"></i></a>
+                        <a class="px-1" href="https://www.facebook.com/mihail.pozarski"><i class="fab fa-facebook-square fa-3x"></i></a>
+                    </div>
+                </div>
+            </div>
         </footer>
+
         <!--jQuery 3.4.1-->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!--Popper JS 1.14.7-->
